@@ -4,7 +4,7 @@ import Home from "./Components/Home"
 import About from "./Components/About"
 import Projects from "./Components/Projects"
 import Contact from "./Components/Contact"
-import useStore from "./Components/Store"
+import useStore from "./Utilities/Store"
 import {BsToggleOn} from 'react-icons/bs'
 import Sidenav from "./Components/Sidenav"
 import Resume from "./Components/Resume"
@@ -15,17 +15,13 @@ function App() {
 
   return (
     <div >
-      
       <Sidenav />
       <Home />
       <About />
       <Projects />
       <Resume  />
       <Contact />
-
       <ThemeExample />
-      
-     
     </div>
   )
 }
