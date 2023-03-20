@@ -6,17 +6,21 @@ import Projects from "./Components/Projects"
 import Contact from "./Components/Contact"
 import useStore from "./Components/Store"
 import {BsToggleOn} from 'react-icons/bs'
+import Sidenav from "./Components/Sidenav"
+import Resume from "./Components/Resume"
 
 function App() {
 
   const {darkMode, setDarkMode} = useStore();
 
   return (
-    <div className={darkMode ? 'bg-sky-100' : 'bg-cyan-900'}>
-      <BsToggleOn onClick={setDarkMode} />
+    <div >
+      
+      <Sidenav />
       <Home />
       <About />
       <Projects />
+      <Resume  />
       <Contact />
 
       <ThemeExample />
