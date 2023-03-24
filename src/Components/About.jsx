@@ -7,7 +7,7 @@ function About() {
     id='about'
     className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
       <h1 className='text-4xl font-bold text-center text-cyan-800'>About</h1>
-      {AboutData.map((item, id) => (
+      {AboutData.map((item) => (
           <div>
             <ol className='flex flex-col md:flex-row relative border-l border-sky-100'>
               <li className='mb-10 ml-10'>

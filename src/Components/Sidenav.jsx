@@ -103,7 +103,7 @@ function Sidenav() {
                 </div>
             ) 
             : (
-                ''
+                null
             )
         }
 
@@ -119,7 +119,7 @@ function Sidenav() {
             <ImHome />
             </a>
             <a 
-            href="#home" 
+            href="#about" 
             className={`rounded-full shadow-lg m-2 p-4 cursor-pointer hover:scale-125 duration-500
                 ${darkMode 
                 ? ' text-sky-300 bg-cyan-900 shadow-sky-300' 
@@ -127,7 +127,7 @@ function Sidenav() {
             <BsInfoCircleFill />
             </a>
             <a 
-            href="#home" 
+            href="#projects" 
             className={`rounded-full shadow-lg m-2 p-4 cursor-pointer hover:scale-125 duration-500
                 ${darkMode 
                 ? ' text-sky-300 bg-cyan-900 shadow-sky-300' 
@@ -135,7 +135,7 @@ function Sidenav() {
             <MdOutlineWork />
             </a>
             <a 
-            href="#home" 
+            href="#resume" 
             className={`rounded-full shadow-lg m-2 p-4 cursor-pointer hover:scale-125 duration-500
                 ${darkMode 
                 ? ' text-sky-300 bg-cyan-900 shadow-sky-300' 
@@ -143,7 +143,7 @@ function Sidenav() {
             <HiDocument />
             </a>
             <a 
-            href="#home" 
+            href="#contact" 
             className={`rounded-full shadow-lg m-2 p-4 cursor-pointer hover:scale-125 duration-500
                 ${darkMode 
                 ? ' text-sky-300 bg-cyan-900 shadow-sky-300' 
