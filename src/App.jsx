@@ -8,6 +8,7 @@ import useStore from "./Utilities/Store"
 import {BsToggleOn} from 'react-icons/bs'
 import Sidenav from "./Components/Sidenav"
 import Resume from "./Components/Resume"
+import TechStack from "./Components/TechStack"
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
     <div >
       <Sidenav />
       <Home />
+      <TechStack />
       <About />
       <Projects />
       <Resume  />

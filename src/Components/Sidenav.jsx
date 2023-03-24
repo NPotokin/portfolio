@@ -7,6 +7,7 @@ import {Bs0CircleFill, BsInfoCircleFill} from 'react-icons/bs'
 import {MdOutlineWork} from 'react-icons/md'
 import {HiDocument} from 'react-icons/hi'
 import {IoMdContact} from 'react-icons/io'
+import {GiSkills} from 'react-icons/gi'
 
 function Sidenav() {
 
@@ -23,25 +24,25 @@ function Sidenav() {
             <FaToggleOn
             size={40}
             onClick={setDarkMode}
-            className='fixed top-4 right-4 z-[99] rounded-full shadow-lg text-sky-300 bg-cyan-900 shadow-sky-300 m-4 p-2 cursor-pointer
+            className='fixed top-4 right-4 z-[99] rounded-full border border-cyan-300 shadow-md text-sky-300 bg-cyan-900 shadow-sky-300 m-4 p-2 cursor-pointer
             hover:scale-125 duration-500'
             />
         ) : (
             <FaToggleOff
             onClick={setDarkMode}
             size={40}
-            className='fixed top-4 right-4 z-[99] rounded-full shadow-lg text-cyan-800 bg-sky-100 shadow-cyan-900 m-4 p-2 cursor-pointer
+            className='fixed top-4 right-4 z-[99] rounded-full shadow-md border border-cyan-800 text-cyan-800 bg-sky-100 shadow-cyan-900 m-4 p-2 cursor-pointer
             hover:scale-125 duration-500'
             />
         )}
 
         <AiOutlineMenu size={40} 
             onClick={handleNav}
-            className={`fixed top-20 right-4 z-[99] md:hidden rounded-full shadow-lg hover:scale-125 duration-500
-            m-4 p-2 cursor-pointer
+            className={`fixed top-20 right-4 z-[99] md:hidden rounded-full shadow-md hover:scale-125 duration-500
+            m-4 p-2 cursor-pointer border
              ${darkMode 
-             ? ' text-sky-300 bg-cyan-900 shadow-sky-300' 
-             : ' text-cyan-800 bg-sky-100 shadow-cyan-800'}`} 
+             ? ' text-sky-300 bg-cyan-900 shadow-sky-300 border-sky-300' 
+             : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`} 
         />
         
         {
@@ -50,53 +51,64 @@ function Sidenav() {
                     <a 
                     onClick={handleNav}
                     href='#home' 
-                    className={`w-[75%] flex justify-center rounded-full shadow-lg m-2 p-4 cursor-pointer
+                    className={`w-[75%] flex justify-center rounded-full shadow-md border m-2 p-4 cursor-pointer
                     hover:scale-125 duration-500 font-semibold text-lg
                     ${darkMode 
-                        ? ' text-sky-300 bg-cyan-900 shadow-sky-300' 
-                        : ' text-cyan-800 bg-sky-100 shadow-cyan-800'}`}>
+                        ? ' text-sky-300 bg-cyan-900 shadow-sky-300 border-sky-300' 
+                        : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
                         <ImHome size={20} />
                         <span className='pl-4'>Home</span>
                     </a>
                     <a 
                     onClick={handleNav}
-                    href='#about' 
-                    className={`w-[75%] flex justify-center rounded-full shadow-lg m-2 p-4 cursor-pointer
+                    href='#home' 
+                    className={`w-[75%] flex justify-center rounded-full shadow-md border m-2 p-4 cursor-pointer
                     hover:scale-125 duration-500 font-semibold text-lg
                     ${darkMode 
-                        ? ' text-sky-300 bg-cyan-900 shadow-sky-300' 
-                        : ' text-cyan-800 bg-sky-100 shadow-cyan-800'}`}>
+                        ? ' text-sky-300 bg-cyan-900 shadow-sky-300 border-sky-300' 
+                        : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
+                        <GiSkills size={20} />
+                        <span className='pl-4'>Skills</span>
+                    </a>
+                    <a 
+                    onClick={handleNav}
+                    href='#about' 
+                    className={`w-[75%] flex justify-center rounded-full shadow-md border m-2 p-4 cursor-pointer
+                    hover:scale-125 duration-500 font-semibold text-lg
+                    ${darkMode 
+                        ? ' text-sky-300 bg-cyan-900 shadow-sky-300 border-sky-300' 
+                        : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
                         <BsInfoCircleFill size={20} />
                         <span className='pl-4'>About</span>
                     </a>
                     <a 
                     onClick={handleNav}
                     href='#projects' 
-                    className={`w-[75%] flex justify-center rounded-full shadow-lg m-2 p-4 cursor-pointer
+                    className={`w-[75%] flex justify-center rounded-full shadow-md border m-2 p-4 cursor-pointer
                     hover:scale-125 duration-500 font-semibold text-lg
                     ${darkMode 
-                        ? ' text-sky-300 bg-cyan-900 shadow-sky-300' 
-                        : ' text-cyan-800 bg-sky-100 shadow-cyan-800'}`}>
+                        ? ' text-sky-300 bg-cyan-900 shadow-sky-300 border-sky-300' 
+                        : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
                         <MdOutlineWork size={20} />
                         <span className='pl-4'>Projects</span>
                     </a>
                     <a onClick={handleNav}
                     href='#resume' 
-                    className={`w-[75%] flex justify-center rounded-full shadow-lg m-2 p-4 cursor-pointer
+                    className={`w-[75%] flex justify-center rounded-full shadow-md border m-2 p-4 cursor-pointer
                     hover:scale-125 duration-500 font-semibold text-lg
                     ${darkMode 
-                        ? ' text-sky-300 bg-cyan-900 shadow-sky-300' 
-                        : ' text-cyan-800 bg-sky-100 shadow-cyan-800'}`}>
+                        ? ' text-sky-300 bg-cyan-900 shadow-sky-300 border-sky-300' 
+                        : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
                         <HiDocument size={20} />
                         <span className='pl-4'>Resume</span>
                     </a>
                     <a onClick={handleNav}
                     href='#contact' 
-                    className={`w-[75%] flex justify-center rounded-full shadow-lg m-2 p-4 cursor-pointer
+                    className={`w-[75%] flex justify-center rounded-full shadow-md border m-2 p-4 cursor-pointer
                     hover:scale-125 duration-500 font-semibold text-lg
                     ${darkMode 
-                        ? ' text-sky-300 bg-cyan-900 shadow-sky-300' 
-                        : ' text-cyan-800 bg-sky-100 shadow-cyan-800'}`}>
+                        ? ' text-sky-300 bg-cyan-900 shadow-sky-300 border-sky-300' 
+                        : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
                         <IoMdContact size={20} />
                         <span className='pl-4'>Contact</span>
                     </a>
@@ -112,42 +124,50 @@ function Sidenav() {
           <div className='flex flex-col '>
             <a 
             href="#home" 
-            className={`rounded-full shadow-lg m-2 p-4 cursor-pointer hover:scale-125 duration-500
+            className={`rounded-full shadow-md m-2 p-4 cursor-pointer hover:scale-125 duration-500 border
                 ${darkMode 
-                ? ' text-sky-300 bg-cyan-900 shadow-sky-300' 
-                : ' text-cyan-800 bg-sky-100 shadow-cyan-800'}`}>
+                    ? ' text-sky-300 bg-cyan-900 shadow-sky-300 border-sky-300' 
+                    : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
             <ImHome />
             </a>
             <a 
-            href="#about" 
-            className={`rounded-full shadow-lg m-2 p-4 cursor-pointer hover:scale-125 duration-500
+            href="#skills" 
+            className={`rounded-full shadow-md m-2 p-4 cursor-pointer hover:scale-125 duration-500 border
                 ${darkMode 
-                ? ' text-sky-300 bg-cyan-900 shadow-sky-300' 
-                : ' text-cyan-800 bg-sky-100 shadow-cyan-800'}`}>
+                    ? ' text-sky-300 bg-cyan-900 shadow-sky-300 border-sky-300' 
+                    : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
+            <GiSkills />
+            </a>
+            <a 
+            href="#about" 
+            className={`rounded-full shadow-md m-2 p-4 cursor-pointer hover:scale-125 duration-500 border
+                ${darkMode 
+                    ? ' text-sky-300 bg-cyan-900 shadow-sky-300 border-sky-300' 
+                    : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
             <BsInfoCircleFill />
             </a>
             <a 
             href="#projects" 
-            className={`rounded-full shadow-lg m-2 p-4 cursor-pointer hover:scale-125 duration-500
+            className={`rounded-full shadow-md m-2 p-4 cursor-pointer hover:scale-125 duration-500 border
                 ${darkMode 
-                ? ' text-sky-300 bg-cyan-900 shadow-sky-300' 
-                : ' text-cyan-800 bg-sky-100 shadow-cyan-800'}`}>
+                ? ' text-sky-300 bg-cyan-900 shadow-sky-300 border-sky-300' 
+                : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
             <MdOutlineWork />
             </a>
             <a 
             href="#resume" 
-            className={`rounded-full shadow-lg m-2 p-4 cursor-pointer hover:scale-125 duration-500
+            className={`rounded-full shadow-md m-2 p-4 cursor-pointer hover:scale-125 duration-500 border
                 ${darkMode 
-                ? ' text-sky-300 bg-cyan-900 shadow-sky-300' 
-                : ' text-cyan-800 bg-sky-100 shadow-cyan-800'}`}>
+                ? ' text-sky-300 bg-cyan-900 shadow-sky-300 border-sky-300' 
+                : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
             <HiDocument />
             </a>
             <a 
             href="#contact" 
-            className={`rounded-full shadow-lg m-2 p-4 cursor-pointer hover:scale-125 duration-500
+            className={`rounded-full shadow-md m-2 p-4 cursor-pointer hover:scale-125 duration-500 border
                 ${darkMode 
-                ? ' text-sky-300 bg-cyan-900 shadow-sky-300' 
-                : ' text-cyan-800 bg-sky-100 shadow-cyan-800'}`}>
+                ? ' text-sky-300 bg-cyan-900 shadow-sky-300 border-sky-300' 
+                : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
             <IoMdContact />
             </a>
                 
