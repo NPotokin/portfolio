@@ -16,7 +16,7 @@ function About() {
           ? 'text-sky-300' 
           : 'text-cyan-800'}`}>About</h1>
       {AboutData.map((item) => (
-          <div>
+          <div key={item.key}>
             <ol className={`flex flex-col md:flex-row relative border-l-2 
             ${darkMode ? 'border-sky-300' : 'border-cyan-800'}`}>
               <li className='mb-10 ml-10'>

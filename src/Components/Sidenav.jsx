@@ -8,6 +8,8 @@ import {MdOutlineWork} from 'react-icons/md'
 import {HiDocument} from 'react-icons/hi'
 import {IoMdContact} from 'react-icons/io'
 import {GiSkills} from 'react-icons/gi'
+import {CgSun} from 'react-icons/cg'
+import {RiMoonFill} from 'react-icons/ri'
 
 function Sidenav() {
 
@@ -21,14 +23,14 @@ function Sidenav() {
   return (
     <div>
         {darkMode ? (
-            <FaToggleOn
+            <CgSun
             size={40}
             onClick={setDarkMode}
             className='fixed top-4 right-4 z-[99] rounded-full border border-cyan-300 shadow-md text-sky-300 bg-cyan-900 shadow-sky-300 m-4 p-2 cursor-pointer
             hover:scale-125 duration-500'
             />
         ) : (
-            <FaToggleOff
+            <RiMoonFill
             onClick={setDarkMode}
             size={40}
             className='fixed top-4 right-4 z-[99] rounded-full shadow-md border border-cyan-800 text-cyan-800 bg-sky-100 shadow-cyan-900 m-4 p-2 cursor-pointer
@@ -52,7 +54,7 @@ function Sidenav() {
                     onClick={handleNav}
                     href='#home' 
                     className={`w-[75%] flex justify-center rounded-full shadow-md border m-2 p-4 cursor-pointer
-                    hover:scale-125 duration-500 font-semibold text-lg
+                    hover:scale-125 duration-700 font-semibold text-lg
                     ${darkMode 
                         ? ' text-sky-300 bg-cyan-900 shadow-sky-300 border-sky-300' 
                         : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
@@ -63,7 +65,7 @@ function Sidenav() {
                     onClick={handleNav}
                     href='#home' 
                     className={`w-[75%] flex justify-center rounded-full shadow-md border m-2 p-4 cursor-pointer
-                    hover:scale-125 duration-500 font-semibold text-lg
+                    hover:scale-125 duration-700 font-semibold text-lg
                     ${darkMode 
                         ? ' text-sky-300 bg-cyan-900 shadow-sky-300 border-sky-300' 
                         : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
@@ -74,7 +76,7 @@ function Sidenav() {
                     onClick={handleNav}
                     href='#about' 
                     className={`w-[75%] flex justify-center rounded-full shadow-md border m-2 p-4 cursor-pointer
-                    hover:scale-125 duration-500 font-semibold text-lg
+                    hover:scale-125 duration-700 font-semibold text-lg
                     ${darkMode 
                         ? ' text-sky-300 bg-cyan-900 shadow-sky-300 border-sky-300' 
                         : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
@@ -85,7 +87,7 @@ function Sidenav() {
                     onClick={handleNav}
                     href='#projects' 
                     className={`w-[75%] flex justify-center rounded-full shadow-md border m-2 p-4 cursor-pointer
-                    hover:scale-125 duration-500 font-semibold text-lg
+                    hover:scale-125 duration-700 font-semibold text-lg
                     ${darkMode 
                         ? ' text-sky-300 bg-cyan-900 shadow-sky-300 border-sky-300' 
                         : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
@@ -95,7 +97,7 @@ function Sidenav() {
                     <a onClick={handleNav}
                     href='#resume' 
                     className={`w-[75%] flex justify-center rounded-full shadow-md border m-2 p-4 cursor-pointer
-                    hover:scale-125 duration-500 font-semibold text-lg
+                    hover:scale-125 duration-700 font-semibold text-lg
                     ${darkMode 
                         ? ' text-sky-300 bg-cyan-900 shadow-sky-300 border-sky-300' 
                         : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
@@ -105,7 +107,7 @@ function Sidenav() {
                     <a onClick={handleNav}
                     href='#contact' 
                     className={`w-[75%] flex justify-center rounded-full shadow-md border m-2 p-4 cursor-pointer
-                    hover:scale-125 duration-500 font-semibold text-lg
+                    hover:scale-125 duration-700 font-semibold text-lg
                     ${darkMode 
                         ? ' text-sky-300 bg-cyan-900 shadow-sky-300 border-sky-300' 
                         : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
@@ -124,7 +126,7 @@ function Sidenav() {
           <div className='flex flex-col '>
             <a 
             href="#home" 
-            className={`rounded-full shadow-md m-2 p-4 cursor-pointer hover:scale-125 duration-500 border
+            className={`rounded-full shadow-md m-2 p-4 cursor-pointer hover:scale-125 duration-700 border
                 ${darkMode 
                     ? ' text-sky-300 bg-cyan-900 shadow-sky-300 border-sky-300' 
                     : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
@@ -132,7 +134,7 @@ function Sidenav() {
             </a>
             <a 
             href="#skills" 
-            className={`rounded-full shadow-md m-2 p-4 cursor-pointer hover:scale-125 duration-500 border
+            className={`rounded-full shadow-md m-2 p-4 cursor-pointer hover:scale-125 duration-700 border
                 ${darkMode 
                     ? ' text-sky-300 bg-cyan-900 shadow-sky-300 border-sky-300' 
                     : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
@@ -140,7 +142,7 @@ function Sidenav() {
             </a>
             <a 
             href="#about" 
-            className={`rounded-full shadow-md m-2 p-4 cursor-pointer hover:scale-125 duration-500 border
+            className={`rounded-full shadow-md m-2 p-4 cursor-pointer hover:scale-125 duration-700 border
                 ${darkMode 
                     ? ' text-sky-300 bg-cyan-900 shadow-sky-300 border-sky-300' 
                     : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
@@ -148,7 +150,7 @@ function Sidenav() {
             </a>
             <a 
             href="#projects" 
-            className={`rounded-full shadow-md m-2 p-4 cursor-pointer hover:scale-125 duration-500 border
+            className={`rounded-full shadow-md m-2 p-4 cursor-pointer hover:scale-125 duration-700 border
                 ${darkMode 
                 ? ' text-sky-300 bg-cyan-900 shadow-sky-300 border-sky-300' 
                 : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
@@ -156,7 +158,7 @@ function Sidenav() {
             </a>
             <a 
             href="#resume" 
-            className={`rounded-full shadow-md m-2 p-4 cursor-pointer hover:scale-125 duration-500 border
+            className={`rounded-full shadow-md m-2 p-4 cursor-pointer hover:scale-125 duration-700 border
                 ${darkMode 
                 ? ' text-sky-300 bg-cyan-900 shadow-sky-300 border-sky-300' 
                 : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
@@ -164,7 +166,7 @@ function Sidenav() {
             </a>
             <a 
             href="#contact" 
-            className={`rounded-full shadow-md m-2 p-4 cursor-pointer hover:scale-125 duration-500 border
+            className={`rounded-full shadow-md m-2 p-4 cursor-pointer hover:scale-125 duration-700 border
                 ${darkMode 
                 ? ' text-sky-300 bg-cyan-900 shadow-sky-300 border-sky-300' 
                 : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
