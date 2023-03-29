@@ -16,11 +16,11 @@ function Projects() {
             : 'text-cyan-800'}`}>
             Projects
         </h1>
-        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-12'>
+        <div className='grid my-3 md:grid-cols-2 gap-12'>
           <div className={`relative flex items-center justify-center h-full w-full shadow-lg
              rounded-xl group ${darkMode ? ' shadow-sky-300 hover:bg-cyan-900' : ' shadow-cyan-800 hover:bg-sky-100'}`}>
             <img 
-            className='rounded-xl group-hover:opacity-30 max-w-[256px] max-h-[256px] object-fill'
+            className='rounded-xl group-hover:opacity-30 max-w-[300px] max-h-[300px] object-fill'
             src='../src/Assets/weatherapp.png' 
             alt="" />
             <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>

@@ -9,6 +9,7 @@ import {BsToggleOn} from 'react-icons/bs'
 import Sidenav from "./Components/Sidenav"
 import Resume from "./Components/Resume"
 import TechStack from "./Components/TechStack"
+import Footer from "./Components/Footer"
 
 function App() {
 
@@ -21,9 +22,10 @@ function App() {
       <TechStack />
       <About />
       <Projects />
-      <Resume  />
+      {/* <Resume  /> */}
       <Contact />
-      <ThemeExample />
+      <Footer />
+      {/* <ThemeExample /> */}
     </div>
   )
 }
