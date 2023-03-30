@@ -11,6 +11,10 @@ import { Parser } from 'htmlparser2'
 
 function Projects() {
 
+  const html = '../Assets/home.png'
+  const tailwind = `<SiTailwindcss size={35} />`;
+  const react = `<SiReact size={35} />`;
+
   const{darkMode, setDarkMode} = useStore();
 
   return (
@@ -45,8 +49,8 @@ function Projects() {
               ${darkMode
               ? 'text-sky-300' 
               : 'text-cyan-800'}`}>
-              {item.icons.map((item) => (
-               <div dangerouslySetInnerHTML={{__html: item}}></div>
+              {item.icons.map((item, index) => (
+               <div key={index}>{item}</div>
                 ))}
 
               </div>  
