@@ -16,12 +16,13 @@ function Contact() {
             : 'text-cyan-800'}`}>
             Contact
         </h1>
-        <form action="" method='POST' encType='multipart/form-data'>
+        <form action="https://api.web3forms.com/submit" method='POST'>
+          <input type="hidden" name="access_key" value="f44798db-66a4-45f5-a85e-025824a5fcb1" />
           <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
             <div className='flex flex-col ml-2 mr-2'>
               <label className={`uppercase text-sm py-2 font-medium 
               ${darkMode ? 'text-sky-300' : 'text-cyan-800'}`} htmlFor="">Name</label>
-              <input className={`border-2 rounded-lg p-3 flex outline-none text-lg
+              <input required={true} className={`border-2 rounded-lg p-3 flex outline-none text-lg
               ${darkMode
               ? 'border-sky-300 bg-cyan-900 text-sky-300'
               : 'border-cyan-800 bg-sky-100 text-cyan-800'}`} 
@@ -30,7 +31,7 @@ function Contact() {
             <div className='flex flex-col ml-2 mr-2'>
               <label className={`uppercase text-sm py-2 font-medium 
               ${darkMode ? 'text-sky-300' : 'text-cyan-800'}`} htmlFor="">Phone</label>
-              <input className={`border-2 rounded-lg p-3 flex outline-none text-lg
+              <input required={true} className={`border-2 rounded-lg p-3 flex outline-none text-lg
               ${darkMode
               ? 'border-sky-300 bg-cyan-900 text-sky-300'
               : 'border-cyan-800 bg-sky-100 text-cyan-800'}`} 
@@ -40,7 +41,7 @@ function Contact() {
           <div className='flex flex-col py-2 ml-2 mr-2'>
             <label className={`uppercase text-sm py-2 font-medium 
               ${darkMode ? 'text-sky-300' : 'text-cyan-800'}`} htmlFor="">Email</label>
-            <input className={`border-2 rounded-lg p-3 flex outline-none text-lg
+            <input required={true} className={`border-2 rounded-lg p-3 flex outline-none text-lg
               ${darkMode
               ? 'border-sky-300 bg-cyan-900 text-sky-300'
               : 'border-cyan-800 bg-sky-100 text-cyan-800'}`}
@@ -49,7 +50,7 @@ function Contact() {
           <div className='flex flex-col py-2 ml-2 mr-2'>
             <label className={`uppercase text-sm py-2 font-medium 
               ${darkMode ? 'text-sky-300' : 'text-cyan-800'}`} htmlFor="">Subject</label>
-            <input className={`border-2 rounded-lg p-3 flex outline-none text-lg
+            <input required={true} className={`border-2 rounded-lg p-3 flex outline-none text-lg
               ${darkMode
               ? 'border-sky-300 bg-cyan-900 text-sky-300'
               : 'border-cyan-800 bg-sky-100 text-cyan-800'}`}
@@ -58,13 +59,14 @@ function Contact() {
           <div className='flex flex-col py-2 ml-2 mr-2'>
             <label className={`uppercase text-sm py-2 font-medium 
               ${darkMode ? 'text-sky-300' : 'text-cyan-800'}`} htmlFor="">Message</label>
-            <textarea className={`border-2 rounded-lg p-3 flex outline-none text-lg
+            <textarea required={true} className={`border-2 rounded-lg p-3 flex outline-none text-lg
               ${darkMode
               ? 'border-sky-300 bg-cyan-900 text-sky-300'
               : 'border-cyan-800 bg-sky-100 text-cyan-800'}`} 
               rows='10' name="message"/>
           </div>
-          <button className={`p-3 m-1 my-auto mt-4 rounded-xl font-medium text-lg shadow-md hover:scale-110  
+          <button 
+          className={`p-3 m-1 my-auto mt-4 rounded-xl font-medium text-lg shadow-md hover:scale-110  
           hover:shadow-2xl duration-700 border block mx-auto
                  ${darkMode 
                  ? 'text-sky-300 shadow-sky-300 bg-cyan-900 border-sky-300' 
