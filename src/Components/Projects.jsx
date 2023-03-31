@@ -11,9 +11,7 @@ import { Parser } from 'htmlparser2'
 
 function Projects() {
 
-  const html = '../Assets/home.png'
-  const tailwind = `<SiTailwindcss size={35} />`;
-  const react = `<SiReact size={35} />`;
+  
 
   const{darkMode, setDarkMode} = useStore();
 
@@ -30,6 +28,7 @@ function Projects() {
         <div className='grid my-3 md:grid-cols-2 gap-12'>
           
           {ProjectData.map((item) => (
+          
           <div key={item.key} 
           className={`relative flex items-center justify-center h-full w-full shadow-lg rounded-xl group 
              ${darkMode ? ' shadow-sky-300 hover:bg-cyan-900' : ' shadow-cyan-800 hover:bg-sky-100'}`}>
@@ -49,9 +48,10 @@ function Projects() {
               ${darkMode
               ? 'text-sky-300' 
               : 'text-cyan-800'}`}>
-              {item.icons.map((item, index) => (
-               <div key={index}>{item}</div>
-                ))}
+              {item.icons.map((item, index) => {
+                const Icon = item;
+               return <Icon key={index} size={35}/>
+                })}
 
               </div>  
               <div className='container flex flex-row justify-around p1 m-1'>

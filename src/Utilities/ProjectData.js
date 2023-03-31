@@ -12,7 +12,7 @@ const ProjectData = [
         title: 'Weather App',
         description:
           'Fetching Weather API to return local time, weather, and 2 week forecast for every parameter',
-          icons: [html, `tailwind`, `react`],
+        icons: [DiHtml5, SiTailwindcss, SiReact],
         exampleClick: '',
         codeClick: '',
       },
