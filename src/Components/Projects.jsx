@@ -40,7 +40,7 @@ function Projects() {
               ${darkMode ? 'text-sky-300' : 'text-cyan-800'}`}>
                 {item.title}
               </h3>
-              <p className={`text-lg font-medium w-xs px-1  text-justify 
+              <p className={`text-lg font-medium px-1 text-justify 
               ${darkMode ? 'text-slate-100' : 'text-slate-800'} `}>
                 {item.description}</p>
               <div className={`container flex flex-row justify-around p1 m-1 my-2 

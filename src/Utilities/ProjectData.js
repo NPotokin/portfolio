@@ -13,7 +13,7 @@ const ProjectData = [
         description:
           'Using Weather API to display local time, weather, and 2 week forecast for every parameter',
         icons: [DiHtml5, SiTailwindcss, SiReact],
-        exampleClick: ()=>window.open('https://www.facebook.com/'),
+        exampleClick: ()=>window.open('https://npotokin.github.io/Weather-App'),
         codeClick: ()=>window.open('https://github.com/NPotokin/Weather-App'),
       },
     {
@@ -23,7 +23,7 @@ const ProjectData = [
         description:
           'Capstone project for Meta FrontEnd Certification, with some testing and form validation ',
         icons: [DiHtml5, SiTailwindcss, SiReact],
-        exampleClick: ()=>window.open('https://www.facebook.com/'),
+        exampleClick: ()=>window.open('https://npotokin.github.io/Meta_Capstone_FrontEnd'),
         codeClick: ()=>window.open('https://github.com/NPotokin/Meta_Capstone_FrontEnd'),
       },
     {
@@ -33,7 +33,7 @@ const ProjectData = [
         description:
           'Rock Paper Scissors Lizard Spock, play random',
         icons: [DiHtml5, SiTailwindcss, SiJavascript],
-        exampleClick: ()=>window.open('https://www.facebook.com/'),
+        exampleClick: ()=>window.open('https://npotokin.github.io/R_P_SC_L_S'),
         codeClick: ()=>window.open('https://github.com/NPotokin/R_P_SC_L_S'),
       },
     {
@@ -43,7 +43,7 @@ const ProjectData = [
         description:
           'Landing page for made up SUP borealis hunters club',
         icons: [DiHtml5, SiTailwindcss],
-        exampleClick: ()=>window.open('https://www.facebook.com/'),
+        exampleClick: ()=>window.open('https://npotokin.github.io/LP2_SUP_Club'),
         codeClick: ()=>window.open('https://github.com/NPotokin/LP2_SUP_Club'),
       },
     {
@@ -53,8 +53,8 @@ const ProjectData = [
         description:
           'Everyone have to make one, right? So I made one.',
         icons: [DiHtml5, SiTailwindcss, SiJavascript],
-        exampleClick: ()=>window.open('https://www.facebook.com/'),
-        codeClick: ()=>window.open('https://github.com/NPotokin/LP2_SUP_Club'),
+        exampleClick: ()=>window.open('https://npotokin.github.io/calculator'),
+        codeClick: ()=>window.open('https://github.com/NPotokin/calculator'),
       },
     {
         key: 'ad6',
@@ -63,7 +63,7 @@ const ProjectData = [
         description:
           'Landing Page for dog helpers, first experiene with TailwindCSS, loved it.',
         icons: [DiHtml5, SiTailwindcss],
-        exampleClick: ()=>window.open('https://www.facebook.com/'),
+        exampleClick: ()=>window.open('https://npotokin.github.io/LP1.1_dog_pond_tailwindcss'),
         codeClick: ()=>window.open('https://github.com/NPotokin/LP1.1_dog_pond_tailwindcss'),
       },
     

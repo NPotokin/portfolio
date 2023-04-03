@@ -45,6 +45,10 @@ function Home() {
               2000, 
               'Tech-enthusiast',
               2000, 
+              'Geothermal Energy fan',
+              2000, 
+              'Ex Cannabis Cultivator',
+              2000, 
                           ]}
             wrapper="div"
             cursor={true}
@@ -55,10 +59,26 @@ function Home() {
           <div className={`flex justify-between pt-6 max-w-[300px] w-full ${darkMode 
           ? 'text-sky-300' 
           : 'text-cyan-800'}`}>
-            <FaLinkedin size={30} className='cursor-pointer hover:scale-110  ' />
-            <FaGitAlt size={30} className='cursor-pointer hover:scale-110  ' />
-            <ImMail size={30} className='cursor-pointer hover:scale-110  ' />
-            <GrInstagram size={30} className='cursor-pointer hover:scale-110  ' />
+            
+            <a 
+            className='cursor-pointer hover:scale-125 duration-700' 
+            target="_blank" rel="noopener noreferrer" 
+            href="https://www.linkedin.com/in/nikitapotokin/">
+              <FaLinkedin size={35}  />
+            </a>
+
+           <a 
+           href="https://github.com/NPotokin" 
+           target="_blank" rel="noopener noreferrer"
+           className='cursor-pointer hover:scale-125 duration-700'>
+            <FaGitAlt size={35} />
+           </a>
+            
+          <a href="mailto:npotokin@gmail.com" 
+          className='cursor-pointer hover:scale-125 duration-700'
+          target="_blank" rel="noopener noreferrer">
+            <ImMail size={35} />
+          </a>
           </div>
         </div>
       </div>

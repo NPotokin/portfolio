@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import {AiOutlineMenu, AiOutlineHome} from 'react-icons/ai'
-import {FaToggleOff, FaToggleOn} from 'react-icons/fa'
 import useStore from '../Utilities/Store'
 import {ImHome} from 'react-icons/im'
 import {Bs0CircleFill, BsInfoCircleFill} from 'react-icons/bs'
@@ -94,7 +93,7 @@ function Sidenav() {
                         <MdOutlineWork size={20} />
                         <span className='pl-4'>Projects</span>
                     </a>
-                    <a onClick={handleNav}
+                    {/* <a onClick={handleNav}
                     href='#resume' 
                     className={`w-[75%] flex justify-center rounded-full shadow-md border m-2 p-4 cursor-pointer
                     hover:scale-125 duration-700 font-semibold text-lg
@@ -103,7 +102,7 @@ function Sidenav() {
                         : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
                         <HiDocument size={20} />
                         <span className='pl-4'>Resume</span>
-                    </a>
+                    </a> */}
                     <a onClick={handleNav}
                     href='#contact' 
                     className={`w-[75%] flex justify-center rounded-full shadow-md border m-2 p-4 cursor-pointer
@@ -156,14 +155,14 @@ function Sidenav() {
                 : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
             <MdOutlineWork />
             </a>
-            <a 
+            {/* <a 
             href="#resume" 
             className={`rounded-full shadow-md m-2 p-4 cursor-pointer hover:scale-125 duration-700 border
                 ${darkMode 
                 ? ' text-sky-300 bg-cyan-900 shadow-sky-300 border-sky-300' 
                 : ' text-cyan-800 bg-sky-100 shadow-cyan-800 border-cyan-800'}`}>
             <HiDocument />
-            </a>
+            </a> */}
             <a 
             href="#contact" 
             className={`rounded-full shadow-md m-2 p-4 cursor-pointer hover:scale-125 duration-700 border
