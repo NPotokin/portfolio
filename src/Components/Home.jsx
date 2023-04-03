@@ -15,7 +15,7 @@ function Home() {
     <div id='home'>
       <img 
       className='w-full h-screen object-cover'
-      src="../Assets/Hero2.jpg" 
+      src="https://user-images.githubusercontent.com/116308322/229610001-f8c1db2b-f6ab-42c9-aee2-0c8565c935cc.jpg" 
       alt="" />
       <div className={`w-full h-screen absolute top-0 left-0 ${darkMode ? 'bg-cyan-900/50' : 'bg-sky-100/50'} `}>
         <div className='max-w-[700px], m-auto h-full flex flex-col justify-center items-center '>

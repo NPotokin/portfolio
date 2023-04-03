@@ -8,7 +8,7 @@ import {SiJavascript, SiGithub, SiTailwindcss, SiReact, SiBootstrap, SiFigma} fr
 const ProjectData = [
     {
         key: 'ad1',
-        image: '../src/Assets/weatherapp.png',
+        image: 'https://user-images.githubusercontent.com/116308322/229610706-f7126df2-f3e9-4a30-ace8-7f652842cce1.png',
         title: 'Weather App',
         description:
           'Using Weather API to display local time, weather, and 2 week forecast for every parameter',
@@ -18,7 +18,7 @@ const ProjectData = [
       },
     {
         key: 'ad2',
-        image: '../src/Assets/little-lemon.png',
+        image: 'https://user-images.githubusercontent.com/116308322/229610836-d3251733-83d9-4fdc-9309-20a42763aa5b.png',
         title: 'Restaraunt webpage',
         description:
           'Capstone project for Meta FrontEnd Certification, with some testing and form validation ',
@@ -28,7 +28,7 @@ const ProjectData = [
       },
     {
         key: 'ad3',
-        image: '../src/Assets/Lizard-spok.png',
+        image: 'https://user-images.githubusercontent.com/116308322/229611002-d8dbf338-2cc3-4936-9b16-2289c3002b87.png',
         title: 'Simple game',
         description:
           'Rock Paper Scissors Lizard Spock, play random',
@@ -38,7 +38,7 @@ const ProjectData = [
       },
     {
         key: 'ad4',
-        image: '../src/Assets/Aurora.png',
+        image: 'https://user-images.githubusercontent.com/116308322/229611125-d0f1b7c4-e583-4d79-ab81-5b32f2745408.png',
         title: 'Landing page',
         description:
           'Landing page for made up SUP borealis hunters club',
@@ -48,7 +48,7 @@ const ProjectData = [
       },
     {
         key: 'ad5',
-        image: '../src/Assets/Calculator.png',
+        image: 'https://user-images.githubusercontent.com/116308322/229611162-1cee7d66-17ae-4273-af48-330b05780741.png',
         title: 'Calculator',
         description:
           'Everyone have to make one, right? So I made one.',
@@ -58,7 +58,7 @@ const ProjectData = [
       },
     {
         key: 'ad6',
-        image: '../src/Assets/stray-dog.png',
+        image: 'https://user-images.githubusercontent.com/116308322/229611228-6830da54-7554-4289-9023-6f708b2b1a51.png',
         title: 'Landing Page',
         description:
           'Landing Page for dog helpers, first experiene with TailwindCSS, loved it.',
