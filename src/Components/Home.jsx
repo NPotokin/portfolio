@@ -47,9 +47,13 @@ function Home() {
               2000, 
               'Geothermal Energy fan',
               2000, 
-              'Ex Cannabis Cultivator',
+              'Former Head Grower',
               2000, 
-                          ]}
+              'Standup Paddleboarder',
+              2000, 
+              'Dog owner',
+              2000, 
+               ]}
             wrapper="div"
             cursor={true}
             repeat={Infinity}

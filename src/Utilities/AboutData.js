@@ -4,14 +4,14 @@ const AboutData = [
         year: '2022 - 2023',
         title: 'Web Developer',
         duration: '6 months',
-        details: 'Having found myself dissatisfied with the software solutions that I was required to utilize on a daily basis and no longer feeling intellectually stimulated, I made a conscious decision to transition towards web development. Since making this decision, I have never looked back. I have successfully completed the Meta Front End professional certificate and am currently engaged in building my portfolio through various projects. I am particularly enthusiastic about TailwindCSS and consider myself a fervent admirer of its capabilities.',
+        details: 'Having found myself dissatisfied with the software solutions that I was required to utilize on a daily basis and no longer feeling intellectually stimulated, I made a conscious decision to transition towards Web Development. Since making this decision, I have never looked back. I have successfully completed the Meta Front End professional certificate and am currently engaged in building my portfolio through various projects. I am particularly enthusiastic about TailwindCSS and consider myself a fervent admirer of its capabilities.',
     },
     {
         key: 'data2',
         year: '2020 - 2022',
-        title: 'Cannabis Industry',
+        title: 'Medical Plant Cultivator',
         duration: '2 years',
-        details: 'After immigrating to Canada, I found myself facing the double challenge of the COVID-19 pandemic and a major oil crisis that hit the country just two weeks after my arrival. Nevertheless, I was undaunted and resolved to make a career in the up and coming cannabis industry. Thanks to my outstanding communication skills and  meticulous attention to detail, I managed to excel and land the prestigious position of Head Grower in less than two years, a feat that typically takes three to five years. ',
+        details: 'After immigrating to Canada, I found myself facing the double challenge of the COVID-19 pandemic and a major oil crisis that hit the country just two weeks after my arrival. Nevertheless, I was undaunted and resolved to make a career in the up and coming plant horticulture industry. Thanks to my outstanding communication skills and  meticulous attention to detail, I managed to excel and land the prestigious position of Head Grower in less than two years, a feat that typically takes three to five years. ',
     },
     {
         key: 'data3',

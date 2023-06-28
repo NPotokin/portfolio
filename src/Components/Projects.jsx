@@ -27,13 +27,15 @@ function Projects() {
           {ProjectData.map((item) => (
           
           <div key={item.key} 
-          className={`relative flex items-center justify-center h-full w-full shadow-lg rounded-xl group 
-             ${darkMode ? ' shadow-sky-300 hover:bg-cyan-900' : ' shadow-cyan-800 hover:bg-sky-100'}`}>
+          className={`relative flex items-center justify-center h-full w-full rounded-xl border-2 group 
+             ${darkMode ? ' border-sky-300 hover:bg-cyan-900' : 'border-cyan-800 hover:bg-sky-100'}`}>
+            
             <img 
-            className={`rounded-xl group-hover:opacity-30 object-fill max-w-[300px] max-h-[300px] 
-            ${darkMode ? 'bg-cyan-900 opacity-70' : 'bg-sky-100 opacity-70'}`}
+            className={`rounded-xl group-hover:opacity-10 object-fill max-w-[290px] max-h-[300px] 
+            ${darkMode ? 'bg-cyan-900 opacity-70' : 'bg-sky-100 opacity-80'}`}
             src={item.image} 
             alt={item.title} />
+
             <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] 
             translate-y-[-50%]'>
               <h3 className={`w-[250px] text-2xl font-bold  tracking-wider text-center 
@@ -56,16 +58,16 @@ function Projects() {
               <div className='container flex flex-row justify-around p-1 m-1'>
                 <button
                 onClick={item.exampleClick} 
-                className={`p-2 m-1 rounded-xl font-medium text-lg shadow-md hover:scale-110  hover:shadow-2xl duration-700 border
+                className={`p-2 m-1 rounded-xl font-medium text-lg hover:scale-110 duration-700 border-2
                  ${darkMode 
-                 ? 'text-sky-300 shadow-sky-300 bg-cyan-900 border-sky-300' 
-                 : 'text-cyan-800 shadow-cyan-800 bg-sky-100 border-cyan-800'}`}>Example</button>
+                 ? 'text-sky-300  bg-cyan-900 border-sky-300' 
+                 : 'text-cyan-800 bg-sky-100 border-cyan-800'}`}>Example</button>
                 <button
                 onClick={item.codeClick} 
-                className={`p-2 m-1 rounded-xl font-medium text-lg shadow-md hover:scale-110  hover:shadow-2xl duration-700 border
+                className={`p-2 m-1 rounded-xl font-medium text-lg hover:scale-110 duration-700 border-2
                  ${darkMode 
-                 ? 'text-sky-300 shadow-sky-300 bg-cyan-900 border-sky-300' 
-                 : 'text-cyan-800 shadow-cyan-800 bg-sky-100 border-cyan-800'}`}>Code</button>
+                 ? 'text-sky-300  bg-cyan-900 border-sky-300' 
+                 : 'text-cyan-800  bg-sky-100 border-cyan-800'}`}>Code</button>
               </div>
             </div>
           </div>

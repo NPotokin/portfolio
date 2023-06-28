@@ -16,6 +16,7 @@ function Contact() {
             : 'text-cyan-800'}`}>
             Contact
         </h1>
+        
         <form action="https://api.web3forms.com/submit" method='POST'>
           <input type="hidden" name="access_key" value="f44798db-66a4-45f5-a85e-025824a5fcb1" />
           <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
@@ -66,8 +67,8 @@ function Contact() {
               rows='10' name="message"/>
           </div>
           <button 
-          className={`p-3 m-1 my-auto mt-4 rounded-xl font-medium text-lg shadow-md hover:scale-110  
-          hover:shadow-2xl duration-700 border block mx-auto
+          className={`p-3 m-1 my-auto mt-4 rounded-xl font-medium text-lg hover:scale-110  
+           duration-700 border-2 block mx-auto
                  ${darkMode 
                  ? 'text-sky-300 shadow-sky-300 bg-cyan-900 border-sky-300' 
                  : 'text-cyan-800 shadow-cyan-800 bg-sky-100 border-cyan-800'}`}>Send Message</button>
