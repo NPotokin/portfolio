@@ -22,16 +22,16 @@ function Projects() {
             : 'text-cyan-800'}`}>
             Projects
         </h1>
-        <div className='grid my-3 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+        <div className='grid my-3 md:grid-cols-2  gap-6'>
           
           {ProjectData.map((item) => (
           
           <div key={item.key} 
-          className={`relative flex items-center justify-center h-full w-full rounded-xl border-2 group 
+          className={`relative flex items-center justify-center h-full w-full rounded-xl  group 
              ${darkMode ? ' border-sky-300 hover:bg-cyan-900' : 'border-cyan-800 hover:bg-sky-100'}`}>
             
             <img 
-            className={`rounded-xl group-hover:opacity-10 object-fill max-w-[290px] max-h-[300px] 
+            className={`rounded-xl group-hover:opacity-10 object-fill max-w-[350px] max-h-[350px] 
             ${darkMode ? 'bg-cyan-900 opacity-70' : 'bg-sky-100 opacity-80'}`}
             src={item.image} 
             alt={item.title} />

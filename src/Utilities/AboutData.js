@@ -1,9 +1,9 @@
 const AboutData = [
     {
         key: 'data1',
-        year: '2022 - 2023',
+        year: '2022 - 2024',
         title: 'Web Developer',
-        duration: '6 months',
+        duration: '2 years',
         details: 'Having found myself dissatisfied with the software solutions that I was required to utilize on a daily basis and no longer feeling intellectually stimulated, I made a conscious decision to transition towards Web Development. Since making this decision, I have never looked back. I have successfully completed the Meta Front End professional certificate and am currently engaged in building my portfolio through various projects. I am particularly enthusiastic about TailwindCSS and consider myself a fervent admirer of its capabilities.',
     },
     {

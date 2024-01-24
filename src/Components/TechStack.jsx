@@ -2,7 +2,9 @@ import React from 'react'
 import useStore from '../Utilities/Store'
 import {ImHtmlFive} from 'react-icons/im'
 import {DiCss3} from 'react-icons/di'
-import {SiJavascript, SiGithub, SiTailwindcss, SiReact, SiBootstrap, SiFigma} from 'react-icons/si'
+import {SiJavascript, SiGithub, SiTailwindcss, SiReact, SiBootstrap, SiFigma, SiMongodb, SiPrisma} from 'react-icons/si'
+import { TbBrandNextjs } from "react-icons/tb";
+import { FaNodeJs } from "react-icons/fa";
 
 
 function TechStack() {
@@ -28,6 +30,10 @@ function TechStack() {
                 <SiTailwindcss size={75} className={`hover:scale-125 duration-700 ${darkMode ? 'text-sky-300' : 'text-cyan-800'}`}/>
                 <SiReact size={75} className={`hover:scale-125 duration-700 ${darkMode ? 'text-sky-300' : 'text-cyan-800'}`}/>
                 <SiFigma size={75} className={`hover:scale-125 duration-700 ${darkMode ? 'text-sky-300' : 'text-cyan-800'}`}/>
+                <TbBrandNextjs size={75} className={`hover:scale-125 duration-700 ${darkMode ? 'text-sky-300' : 'text-cyan-800'}`}/>
+                <FaNodeJs size={75} className={`hover:scale-125 duration-700 ${darkMode ? 'text-sky-300' : 'text-cyan-800'}`}/>
+                <SiMongodb size={75} className={`hover:scale-125 duration-700 ${darkMode ? 'text-sky-300' : 'text-cyan-800'}`}/>
+                <SiPrisma size={75} className={`hover:scale-125 duration-700 ${darkMode ? 'text-sky-300' : 'text-cyan-800'}`}/>
                 
 
             </div>
